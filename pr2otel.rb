@@ -5,21 +5,21 @@
 class Pr2otel < Formula
   desc "pr2otel is a tool to convert Pull Request to OpenTelemetry-compatible telemetry."
   homepage "https://github.com/kazuki-iwanaga/pr2otel"
-  version "0.0.7-beta3"
+  version "0.0.8"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/kazuki-iwanaga/pr2otel/releases/download/v0.0.7-beta3/pr2otel_Darwin_x86_64.tar.gz"
-      sha256 "04a950ea9da6151d637937d5378631c4e004a729873b22b3315a0cbee4295984"
+      url "https://github.com/kazuki-iwanaga/pr2otel/releases/download/v0.0.8/pr2otel_Darwin_x86_64.tar.gz"
+      sha256 "bb6a1b9850f6d2e2b96d6fd4b8c36a348b609cf02a4276f8ba7d9606478eccf8"
 
       def install
         bin.install "pr2otel"
       end
     end
     on_arm do
-      url "https://github.com/kazuki-iwanaga/pr2otel/releases/download/v0.0.7-beta3/pr2otel_Darwin_arm64.tar.gz"
-      sha256 "188a7f5bfb7cbeb9bc932197b34d6a979496a6d4458b15630bd020119d39b282"
+      url "https://github.com/kazuki-iwanaga/pr2otel/releases/download/v0.0.8/pr2otel_Darwin_arm64.tar.gz"
+      sha256 "9e4fb8a769d79c13f63ea05130909797e7907786ae69dfc87e499e8964227bab"
 
       def install
         bin.install "pr2otel"
@@ -30,8 +30,8 @@ class Pr2otel < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kazuki-iwanaga/pr2otel/releases/download/v0.0.7-beta3/pr2otel_Linux_x86_64.tar.gz"
-        sha256 "a3561b5d16ba9f9e3a930a6a01774ba1dfc7d955079cf3405ae224f5d145bd2d"
+        url "https://github.com/kazuki-iwanaga/pr2otel/releases/download/v0.0.8/pr2otel_Linux_x86_64.tar.gz"
+        sha256 "f082091cec1c287e9bb33e81d9cead9a6066627508b4d374a8877828a595b688"
 
         def install
           bin.install "pr2otel"
@@ -40,8 +40,8 @@ class Pr2otel < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kazuki-iwanaga/pr2otel/releases/download/v0.0.7-beta3/pr2otel_Linux_arm64.tar.gz"
-        sha256 "9bbba58a2d40a1ddd2cb6a3ec4abf5ba37803b5c7a53af52220dc00f65769953"
+        url "https://github.com/kazuki-iwanaga/pr2otel/releases/download/v0.0.8/pr2otel_Linux_arm64.tar.gz"
+        sha256 "3371865715cd789539cd00a136a6b87b21dda4a85aa91a19dbce63431147b31c"
 
         def install
           bin.install "pr2otel"
