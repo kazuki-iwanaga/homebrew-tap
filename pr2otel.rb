@@ -11,7 +11,7 @@ class Pr2otel < Formula
   on_macos do
     on_intel do
       url "https://github.com/kazuki-iwanaga/pr2otel/releases/download/v0.0.7-beta3/pr2otel_Darwin_x86_64.tar.gz"
-      sha256 "cdc36b6697b2676c9ae96d8516cfbfe3c127d2a61ae617c8fb4a931db841f485"
+      sha256 "04a950ea9da6151d637937d5378631c4e004a729873b22b3315a0cbee4295984"
 
       def install
         bin.install "pr2otel"
@@ -19,7 +19,7 @@ class Pr2otel < Formula
     end
     on_arm do
       url "https://github.com/kazuki-iwanaga/pr2otel/releases/download/v0.0.7-beta3/pr2otel_Darwin_arm64.tar.gz"
-      sha256 "ad11329df1cd8d2d3dcf07ad714ee24efa3726b049e3e46c7065f7741b027969"
+      sha256 "188a7f5bfb7cbeb9bc932197b34d6a979496a6d4458b15630bd020119d39b282"
 
       def install
         bin.install "pr2otel"
@@ -31,7 +31,7 @@ class Pr2otel < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/kazuki-iwanaga/pr2otel/releases/download/v0.0.7-beta3/pr2otel_Linux_x86_64.tar.gz"
-        sha256 "814d6a2988adde7cb566ad74c94d29f2cbc9f96b657c7244a88cac020a605e84"
+        sha256 "a3561b5d16ba9f9e3a930a6a01774ba1dfc7d955079cf3405ae224f5d145bd2d"
 
         def install
           bin.install "pr2otel"
@@ -41,7 +41,7 @@ class Pr2otel < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/kazuki-iwanaga/pr2otel/releases/download/v0.0.7-beta3/pr2otel_Linux_arm64.tar.gz"
-        sha256 "8953cb34374e4f34f83acba2040740dc8f0b4febd32b29634ed97947f300e798"
+        sha256 "9bbba58a2d40a1ddd2cb6a3ec4abf5ba37803b5c7a53af52220dc00f65769953"
 
         def install
           bin.install "pr2otel"
