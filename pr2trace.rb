@@ -5,21 +5,21 @@
 class Pr2trace < Formula
   desc "A CLI tool to convert Pull Request to OpenTelemetry-compatible telemetry."
   homepage "https://github.com/kazuki-iwanaga/pr2trace"
-  version "0.0.0"
+  version "0.0.0-alpha"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/kazuki-iwanaga/pr2trace/releases/download/v0.0.0/pr2trace_v0.0.0_Darwin_x86_64.tar.gz"
-      sha256 "392f2666719343f2af6b1fad6e71e59e26e634f7b63f51cbd2fc4154884ac936"
+      url "https://github.com/kazuki-iwanaga/pr2trace/releases/download/v0.0.0-alpha/pr2trace_v0.0.0-alpha_Darwin_x86_64.tar.gz"
+      sha256 "a6b6773d0a70f470f4257e73ec835decfdb7c54ff0b644ec482cd797526b3882"
 
       def install
         bin.install "pr2trace"
       end
     end
     on_arm do
-      url "https://github.com/kazuki-iwanaga/pr2trace/releases/download/v0.0.0/pr2trace_v0.0.0_Darwin_arm64.tar.gz"
-      sha256 "48f288cd8288cd38932d683516388a33c202826cf38e0a89c782451bfff7383a"
+      url "https://github.com/kazuki-iwanaga/pr2trace/releases/download/v0.0.0-alpha/pr2trace_v0.0.0-alpha_Darwin_arm64.tar.gz"
+      sha256 "52f89015948defe36dd1c0a4b9b6e8f73c44025ca4f1a42e59e5e8bd8a968698"
 
       def install
         bin.install "pr2trace"
@@ -30,8 +30,8 @@ class Pr2trace < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kazuki-iwanaga/pr2trace/releases/download/v0.0.0/pr2trace_v0.0.0_Linux_x86_64.tar.gz"
-        sha256 "a40347f225806a74998b9d9d795eb3eff69e49aa92d3b7c20882a8861ccdeaa1"
+        url "https://github.com/kazuki-iwanaga/pr2trace/releases/download/v0.0.0-alpha/pr2trace_v0.0.0-alpha_Linux_x86_64.tar.gz"
+        sha256 "4da31d8ab1c4208d514c270fe35f1682a8d2ba026a1558e6a9f8a297352fe277"
 
         def install
           bin.install "pr2trace"
@@ -40,8 +40,8 @@ class Pr2trace < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kazuki-iwanaga/pr2trace/releases/download/v0.0.0/pr2trace_v0.0.0_Linux_arm64.tar.gz"
-        sha256 "4a19f7e99f9a582c937932f734dea4dcfa52278cd213ee6989e1d019a14a1faf"
+        url "https://github.com/kazuki-iwanaga/pr2trace/releases/download/v0.0.0-alpha/pr2trace_v0.0.0-alpha_Linux_arm64.tar.gz"
+        sha256 "6592dcd21c36c8c18a75284fd20417cc229bae2bfe29fe74cf81047d8023f2d0"
 
         def install
           bin.install "pr2trace"
